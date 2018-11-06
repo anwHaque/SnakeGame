@@ -5,25 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SnakeGame</title>
+    <link rel="icon" href="snake.png">
     <style>
-        #cav{
-            background-color: black;
-            border: solid red;            
-        }
-        body{
-            margin: 0;
-            text-align: center;
-        }
+    body{
+        margin: 0;
+        overflow: hidden;
+      
+    }
+    canvas {
+    
+    background-color: #f1f1f1;
+}
+   
     </style>
 </head>
-<body>
-    <h1>Snake Game</h1>
-    <strong>Timer:</strong><span id="output"></span>
-    <strong>Score:</strong><span id="score"></span>
-    <div id="btnId"><button onclick="startGame()">Start</button></div> 
-    <div id="gameOver"></div>
-    <canvas id="cav"></canvas>
-    <script src="script.js"></script>
+<body >
+    <canvas id="myCanvas"></canvas>
+    <script src="snake.js"></script>
     <script src="timer.js"></script>
 </body>
 </html>
